@@ -1,0 +1,26 @@
+[
+  {
+    "text": "who is the principal",
+    "intent": "Faculty_details",
+    "intent_prediction": {
+      "name": "Principal",
+      "confidence": 0.7591529488563538
+    }
+  },
+  {
+    "text": "where can i see the placement notifications of GMRIT",
+    "intent": "Placements",
+    "intent_prediction": {
+      "name": "Notifications",
+      "confidence": 0.5524629354476929
+    }
+  },
+  {
+    "text": "how is gmrit",
+    "intent": "Infrastructure",
+    "intent_prediction": {
+      "name": "college_info",
+      "confidence": 0.42875751852989197
+    }
+  }
+]
