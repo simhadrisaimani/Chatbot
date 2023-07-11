@@ -1,0 +1,48 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+
+
+stories:
+  - story: happy path
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_happy
+    - intent: goodbye
+    - action: utter_goodbye
+  
+  - story: gender path
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: gender
+    - action: utter_gender
+
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_happy
+      - action: utter_happy_cheer_up
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_sad_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_sad_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
