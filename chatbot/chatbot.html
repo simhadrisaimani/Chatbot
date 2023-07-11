@@ -1,0 +1,39 @@
+<html>
+
+<body style="margin: 0%;">
+
+  <head>
+
+    <link rel="stylesheet" href="./chatbot.css">
+  </head>
+  <iframe src="https://gmrit.edu.in/index.php" height="100%" width="100%"></iframe>
+  <script>!(function () {
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              initPayload: '/greet',
+              customData: { language: "en" },
+              socketUrl: "http://localhost:5005/",
+              socketPath: "/socket.io/",
+              title: "GMRIT CHATBOT",
+              subtitle: "Here is our campus GENIE",
+              profileAvatar: "avatarBot.png",
+              tooltipPayload: "/greet",
+              tooltipDelay: 500,
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+    localStorage.clear();
+  </script>
+</body>
+
+</html>
