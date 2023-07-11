@@ -1,0 +1,700 @@
+version: "3.1"
+
+nlu:
+  - intent: gender
+    examples: |
+      - are u girl or boy
+      - are you girl
+      - are you boy
+      - boy or girl
+      - what is your age 
+      - your age 
+      - your age please
+      - your gender
+
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - hai
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_happy
+    examples: |
+      - my day was simply super
+      - I am happy
+      - I am happy
+      - super happy
+      - I'm so happy
+      - happy
+      - very happy
+      - feeling good
+      - feeling very good
+      - extremly happy
+      - so happi
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - who are you
+      - how are you
+      - how u are
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: college_info
+    examples: |
+      -what is collage name?
+      -what collage?
+      -collage name
+      -what is the address of the collage?
+      -collage address
+      -tell about collage
+      -collage information?
+      -information about collage
+      -clg info
+      -college info
+      -how was the college
+      -gmrit college established 
+      -how is gmrit
+      -about gmrit
+      -gmrit info
+      -area of gmrit
+      -area of gmrit in acres
+      -what is area of gmrit
+      -about gmrit college
+      -tell me about gmrit
+
+  - intent: gmritan
+    examples: |
+      -im student in gmrit
+      -GMRIT STUDENT
+
+  - intent: non_gmritan
+    examples: |
+      -im not gmrit student
+      -NON GMRIT STUDENT
+
+
+  - intent: department_info
+    examples: |
+      -what are the departments in Gmrit
+      -GMRIT departments
+      -how many departments in gmrit
+      -departments info
+      -deparments
+      -branches
+      -cse
+      -CSE department
+      -CSE
+      -ece
+      -ECE department
+      -ECE
+      -it
+      -IT department
+      -IT
+      -eee
+      -EEE department
+      -EEE
+      -civil
+      -CIVIL department
+      -CIVIL
+      -mechanical
+      -mech
+      -mechanical department
+      -MECH
+      -gmrit branches
+      -what are the programs offered by GMRIT
+      -what are the different programs offered
+      -what types of programs existed in GMRIT
+      -what are the UG programs offered by GMRIT
+      -what are BTECH programs offered by GMRIT
+
+  - intent: online_payments
+    examples: |
+      -how to do online payments
+      -how to pay jvd fee
+      -how to pay non-jvd fee
+      -how to pay hostel fee
+      -how to pay bus fee
+      -how to pay penalty fee
+      -how to pay library penalty
+      -how to do staff payments
+      -how to other payments
+      -how to do payments
+      -online payments
+      -payments
+
+  - intent: Faculty_details
+    examples: |
+      -Faculty details of GMRIT college
+      -who is the principal
+      -how to get faculty details
+      -performance of Faculty in this collage
+      -faculty info
+      -faculty infomation
+
+  - intent: HOD_details
+    examples: |
+      -how to get details of HOD 
+      -who is the hod 
+      -hod of gmrit
+
+  - intent: Academic_calendar
+    examples: |
+      -Academic calendar
+      -Academic calendar of GMRIT
+      -What is the academic calendar of GMRIT
+      -GMRIT Academic calendar
+  - intent: Results
+    examples: |
+      -results
+      -How to get the results
+      -where to see the results 
+      -How to know the results
+      -about results
+      -today results
+  - intent: Timetables
+    examples: |
+      -timetables
+      -How to get the timetables
+      -where to see the timetables 
+      -How to know the timetables
+      -timetable of 2022
+      -2022 timttable
+  - intent: 360view
+    examples: |
+      -360 view of gmrit
+      -360 degree view
+      -360 view
+      -whole view of gmrit
+      -360 view of college
+  - intent: Faculty_details_CSE
+    examples: |
+      -where to find the faculty details of CSE department
+      -how to get faculty details of CSE department
+      -CSE HOD and Faculty
+      -cse department faculty
+      -cse faculty
+  - intent: Faculty_details_civil
+    examples: |
+      -where to find the faculty details of civil department
+      -how to get faculty details of civil department
+      -CIVIL HOD and Faculty
+      -civil department faculty
+      -civil faculty
+  - intent: Faculty_details_ece
+    examples: |
+      -where to find the faculty details of ece department
+      -how to get faculty details of ece department
+      -ECE HOD and Faculty
+      -ece department faculty
+      -ece faculty
+  - intent: Faculty_details_eee
+    examples: |
+      -where to find the faculty details of eee department
+      -how to get faculty details of eee department
+      -EEE HOD and Faculty
+      -eee department faculty
+      -eee faculty
+
+  - intent: Faculty_details_It
+    examples: |
+      -where to find the faculty details of It department
+      -how to get faculty details of It department
+      -IT HOD and Faculty
+      -it department faculty
+      -it faculty
+
+  - intent: Faculty_details_mech
+    examples: |
+      -where to find the faculty details of mechanical department
+      -how to get faculty details of mech department
+      -who is mechanical HOD
+      -mech HOD and Faculty
+      -mech department faculty
+      -mech faculty
+
+  - intent: Faculty_details_bsh
+    examples: |
+      -where to find the faculty details of bsh department
+      -how to get faculty details of bsh department
+      -BSH HOD and Faculty
+      -bsh department faculty
+      -bsh faculty
+  - intent: NIRF_ranking
+    examples: |
+      -nirf ranking of gmrit
+      -NIRF ranking
+      -nirf of gmrit
+      -gmrit nirf ranking
+      -what is latest nirf ranking of gmrit
+      -latest nirf ranking
+
+  - intent: Notifications
+    examples: |
+      -where can I get the placement notifications
+      -what are the current events notifications of GMRIT
+      -where can i see the placement notifications of GMRIT
+      -Events of GMRIT
+      -Notice board of GMRIT
+
+  - intent: Exam_Notifications
+    examples: |
+      -where can I get the semester exam notifications
+      -where can i get the supplementary exam notfication 
+      -where can i see 5 sem exam notifications
+      -where can i get 4 sem supple notifications
+
+  - intent: Placements
+    examples: |
+      -where can i get the placement information
+      -Placements of GMRIT
+      -what is the current placement information of GMRIT
+      -where can i see the placement notifications of GMRIT
+
+  - intent: Autonomy_Governance
+    examples: |
+      -What is the govenance information of GMRIT
+      -What is the autonomy information of GMRIT
+      -What is autonomy
+      -Autonomy information of GMRIT
+
+  - intent: Academic_Regulations
+    examples: |
+      -What are the academic regulations of GMRIT
+      -where can I get the academic regulations of GMRIT
+      -what are the academic regulations present in gmrit
+      -where can i find the academic regulations
+      -AR20
+      -about AR19 UG program
+
+  - intent: PG_Programs
+    examples: |
+      -what are the PG programs offered by GMRIT
+      -what are the different PG  programs offered
+      -what are MTECH programs offered by GMRIT
+      -mtech programes in gmrit
+      -mtech programs
+      -pg programs
+
+  - intent: LAN-Based_courses
+    examples: |
+      -what are LAN_based courses in GMRIT
+      -where can i find different study materials 
+      -where to find previous question papers 
+      -where can i access my LAN-Based_courses
+      -how to download previous sem papers
+      -lan based materials
+      -gate previous papers
+      -gate material
+      -how to download syllabus
+      -syllabus download
+      -MTech syllabus download
+      -M.Tech. Sessional Examination Question Papers & keys
+      -B.Tech. Sessional Examination Question Papers & keys
+
+  - intent: Lecture_capturing_system
+    examples: |
+      -what is Lecture_capturing_system
+      -where can i find recordings of different subjects 
+      -where can i access the lecture_capturing_system
+      -about LCS
+      -lcs sysytem
+
+  - intent: Labs
+    examples: |
+      -what are the lab resources provided by GMRIT
+      -Does GMRIT provide lab facility
+      -what are the different labs in GMRIT
+
+  - intent: Library
+    examples: |
+      -Is there a library in GMRIT
+      -where can we get the subject related books
+      -where can we get the books of respective department
+
+  - intent: Sports
+    examples: |
+      -Which sports are being encouraged by GMRIT
+      -Is GMRIT providing any sports facility
+      -Which sports can be played in GMRIT
+      -About Gym in GMRIT
+
+  - intent: Auditorium
+    examples: |
+      -Auditorium of GMRIT
+      -Is there an auditorium in this college
+      -Details of auditorium
+      -Is there an auditorium in GMRIT
+
+  - intent: Dining
+    examples: |
+      -How will be the hostel dining
+      -Is the dining facility good in this college
+      -Is there any dining facility in the hostel
+      -how is the dining
+
+  - intent: Post_office
+    examples: |
+      -Is there a post office in GMRIT
+      -Does gmrit consists of a post office
+      -Does gmrit provides post office facility
+
+  - intent: ATM
+    examples: |
+      -Is there an ATM in GMRIT
+      -Does gmrit consists of an ATM
+      -Does gmrit provides ATM facility
+      -bank in gmrit
+      -gmrit bank
+
+  - intent: Medical_Assistance
+    examples: |
+      -Does GMRIT provide with medical assistance
+      -Does the hostlers get good medical assistance
+      -How is the medical assistance given to the hostlers
+      -medical facility in gmrit
+
+  - intent: Bakery
+    examples: |
+      -Is there any bakery in gmrit.
+      -Does gmrit contains a bakery
+      -Does any bakery available for the students
+
+  - intent: Canteen
+    examples: |
+      -Is there canteen facility in GMRIT
+      -Is there any canteen facility for day scholars
+      -Where can the students have their lunch or breakfast
+
+  - intent: wifi
+    examples: |
+      -Does gmrit provide free wifi
+      -Does gmrit provide wifi facility for students and faculty
+      -Is there any internet and wireless networking facility
+
+  - intent: security
+    examples: |
+      - Is good security provided for hostlers in GMRIT
+      - Are hostlers provided with good security
+      - Is security provided all through the year
+
+  - intent: Recreation
+    examples: |
+      - Details of recreation
+      - Is recreation provided in GMRIT
+      - Is there any recreation facility in this college
+
+  - intent: yoga
+    examples: |
+      - Are students are enrolled with yoga classes
+      - Are students are trained for yoga 
+      - Is this college conducting yoga classes
+      - How is the college encouraging students to be fit and healthy
+
+  - intent: Computer_Block
+    examples: |
+      - Where is the computer block.
+      - Is there any computer block provided by this college
+      - Where to do computer related work after college hours
+
+  - intent: student_parent_login
+    examples: |
+      -how to check my attendance
+      -how to check my previous sem results 
+      -how to check my previous sem attendance
+      -student login
+      -parent logins
+      -fees structure
+      -what is the fees of 2 year
+      -fees for 3rd year
+      -login to 20341a05i5 number
+      -faculty login
+      -about jntuk number 20341a05i5
+
+  - intent: Cyber_Security
+    examples: |
+      -Is there Cyber security course in GMRIT
+      -About cyber security course in GMRIT
+      -Is cyber security incuded as PG program
+      -Is cyber security included in MTECH programs
+
+  - intent: Environmental
+    examples: |
+      -Is there Environmental course in GMRIT
+      -About Environmental course in GMRIT
+      -Is Environmental course incuded as PG program
+      -Is Environmental course included in MTECH programs
+
+  - intent: power_and_industrial_drives
+    examples: |
+      -Is there power and industrial drives course in GMRIT
+      -About power and industrial drives course in GMRIT
+      -Is power and industrial drives course incuded as PG program
+      -Is power and industrial drives course included in MTECH programs
+
+  - intent: Transportation
+    examples: |
+      -Is there Transportation course in GMRIT
+      -About Transportation course in GMRIT
+      -Is Transportation course incuded as PG program
+      -Is Transportation course included in MTECH programs
+
+  - intent: VLSI_and_embedded_systems_design
+    examples: |
+      -Is there VLSI and embedded systems design course in GMRIT
+      -About VLSI and embedded systems design course in GMRIT
+      -Is VLSI and embedded systems design course incuded as PG program
+      -Is VLSI and embedded systems design course included in MTECH programs
+
+  - intent: Thermal
+    examples: |
+      -Is there Thermal course in GMRIT
+      -About Thermal course in GMRIT
+      -Is Thermal course incuded as PG program
+      -Is Thermal course included in MTECH programs
+
+  - intent: Infrastructure
+    examples: |
+      -what is the quality of infrastructure in gmrit
+      -infra in gmrit
+      -infrastructure
+      -facilities in gmrit
+      -gmrit facilities
+      -life in gmrit
+      -how is gmrit
+
+  - intent: Principal
+    examples: |
+      -who is the principal of GMRIT
+      -GMRIT principal
+      -principal
+      -principal GMRIT
+      -principal of GMRIT
+      -who is the principal
+      -principal of gmrit
+      -principle of gmrit college
+      -this college principal
+      -college principal
+      -gmrit principle
+
+  - intent: NAAC_accrediation
+    examples: |
+      -Is there NAAC accrediation for GMRIT
+      -NAAC accrediations
+      -GMRIT NAAC accrediations
+      -NAAC accrediations of GMRIT
+      -NAAC accrediation for GMRIT
+
+  - intent: NBA_accrediation
+    examples: |
+      -Is there NBA accrediation for GMRIT
+      -NBA accrediations
+      -GMRIT NBA accrediations
+      -NBA accrediations of GMRIT
+      -NBA accrediation for GMRIT
+
+  - intent: CDC_Head
+    examples: |
+      -who is the CDC Head of GMRIT
+      -CDC Head
+      -CDC Head of GMRIT
+      -GMRIT CDC Head
+
+  - intent: academic_dean
+    examples: |
+      -who is the academics dean of GMRIT
+      -academics dean of GMRIT
+      -academics dean
+      -gmrit academics dean
+
+  - intent: student_dean
+    examples: |
+      -who is the student affairs dean of gmrit
+      -student affairs dean of GMRIT
+      -students dean
+      -gmrit student affairs dean
+
+  - intent: R&D_dean
+    examples: |
+      -who is the R&D dean  of GMRIT
+      -R&D dean of GMRIT
+      -research and development dean
+      -gmrit research and development dean
+      -gmrit R&D dean
+      -R and D dean
+      -Research and development dean
+
+  - intent: Dean
+    examples: |
+      -who are the Deans of GMRIT
+      -Deans of GMRIT
+      -who is the Dean of GMRIT
+      -GMRIT Dean
+      -Deans
+      -Deans of GMRIT
+      -Dean of GMRIT
+
+  - intent: Director
+    examples: |
+      -who is the Director of GMRIT
+      -GMRIT Director
+      -Director
+      -Director GMRIT
+      -Director of GMRIT
+
+  - intent: controller_of_examinations
+    examples: |
+      -who is the examination section controller of GMRIT
+      -GMRIT controller of examinaton section
+      -Controller of examination section
+      -controller of examination section GMRIT
+      -controller of examinations of GMRIT
+      -head of examinations of GMRIT
+      -head of examination section GMRIT
+      -head of exams
+      -controller of exams
+
+  - intent: CSE_HOD
+    examples: |
+      -who is the CSE HOD of GMRIT
+      -CSE HOD
+      -CSE hod of GMRIT
+      -GMRIT CSE HOD
+      -hod of cse
+
+  - intent: IT_HOD
+    examples: |
+      -who is the IT HOD of GMRIT
+      -IT HOD
+      -IT hod of GMRIT
+      -GMRIT IT HOD
+      -hod of it
+
+
+  - intent: CIVIL_HOD
+    examples: |
+      -who is the CIVIL HOD of GMRIT
+      -CIVIL HOD
+      -CIVIL hod of GMRIT
+      -GMRIT CIVIL HOD
+      -hod of civil
+
+  - intent: ECE_HOD
+    examples: |
+      -who is the ECE HOD of GMRIT
+      -ECE HOD
+      -ECE hod of GMRIT
+      -GMRIT ECE HOD
+      -hod of ece
+
+  - intent: EEE_HOD
+    examples: |
+      -who is the EEE HOD of GMRIT
+      -EEE HOD
+      -EEE hod of GMRIT
+      -GMRIT EEE HOD
+      -hodof eee
+
+  - intent: MECH_HOD
+    examples: |
+      -who is the MECH HOD of GMRIT
+      -Mechanical HOD
+      -Mechanical hod of GMRIT
+      -GMRIT MECH HOD
+      -hod of mech
+
+  - intent: BSH_HOD
+    examples: |
+      -who is the BSH HOD of GMRIT
+      -BSH HOD
+      -BSH HOD of GMRIT
+      -GMRIT BSH HOD
+      -hod of bsh
+  - intent: admission_form
+    examples: |
+      -how to download admission form
+      -about admissions
+      -admission details
+      -i want to admission in gmrit
+      -admissions
+      -can i join in gmrit
+      -i want to join in gmrit
